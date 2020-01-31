@@ -15,7 +15,7 @@ h1 {
     background: rgb(208, 217, 243);
     position: relative;
     margin: 7% auto auto auto;
-    width: 40vw;
+    width: 400px;
     text-align: center;
     border: 1px solid rgb(36, 36, 36);
     border-radius: 10px;
@@ -47,7 +47,7 @@ button {
 }
 
 input {
-    width: 35vw;
+    width: 350px;
     height: 6vw;
     text-align: right;
     font-size: 1.7em;

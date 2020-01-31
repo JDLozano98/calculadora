@@ -13,7 +13,7 @@ export class CalculatorComponent {
   private preValue: string = '';
   private curValue: string = '';
 
-  addToExpression(value: string){
+  calcular(value: string){
     if(this.result != ''){
       this.preValue = this.curValue;
       this.curValue = value;

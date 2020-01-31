@@ -16,10 +16,10 @@
                 <input type="text" value="{{ result }}" class="result" readonly />
             </div>
             <div>
-                <button class="responsive long" *ngFor="let longButton of longButtons" (click)="addToExpression(longButton)">
+                <button class="responsive long" *ngFor="let longButton of longButtons" (click)="calcular(longButton)">
                   {{ longButton }}
                 </button>
-                <button class="responsive" *ngFor="let button of buttons" (click)="addToExpression(button)">
+                <button class="responsive" *ngFor="let button of buttons" (click)="calcular(button)">
                   {{ button }}
                 </button>
             </div>
