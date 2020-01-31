@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculadora</h1>
+            <div>
+                <input type="text" value="{{ result }}" class="result" readonly />
+            </div>
+            <div>
+                <button class="responsive long" *ngFor="let longButton of longButtons" (click)="addToExpression(longButton)">
+                  {{ longButton }}
+                </button>
+                <button class="responsive" *ngFor="let button of buttons" (click)="addToExpression(button)">
+                  {{ button }}
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
